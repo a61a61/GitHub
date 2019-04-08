@@ -1,27 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <title>
-        Portfolio
-    </title>
-    <link href="style.css" type="text/css" rel="stylesheet">
+      Портфолио | АК "Микеланджело"
+  </title>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<div id="main">
-        <h1>
-            <a href="#">
-            <span id="logo">аk</span> микеланджело
-            </a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a class="nav-link" href="index.html">главная</a></li>
-                <li><a href="#">портфолио</a></li>
-                <li><a class="nav-link" href="#">о нас</a></li>
-                <li><a class="nav-link" href="#">новости</a></li>
-            </ul>
-        </nav>
-</div> <!-- portfolio -->
+  <div id="container">
+      <div id="main-wrapper">
+          <div id="main">
+            <div id="header">
+                <div id="company-name">
+                    <h1>
+                      <a href="index.html">
+                        <span id="logo">аk</span>микеланджело
+                      </a>
+                    </h1>
+                </div> <!--company-name-->
+                <div id="nav">
+                  <div class="navitem">
+                    <a class="nav-link" href="index.html">главная</a>
+                  </div>
+                  <div class="navitem">
+                    <a href="#">портфолио</a>
+                  </div>
+                  <div class="navitem">
+                    <a class="nav-link" href="#">о&nbsp;нас</a>
+                  </div>
+                  <div class="navitem">
+                    <a class="nav-link" href="#">новости</a>
+                  </div>
+                </div> <!--nav-->
+            </div> <!--header-->
+            <h2>проекты</h2>
+            <div id="portfolio-images">
+                <a href="project-1.html">
+                    <img src="images/portfolio-images/project1-smaller.jpg" alt="проект 1">
+                </a>
+                <a href="#">
+                    <img src="images/portfolio-images/project2-smaller.jpg" alt="проект 2">
+                </a>  
+                <a href=#>
+                  <img src="images/portfolio-images/project3-smaller.jpg" alt="проект 3">
+                </a>
+            </div> <!--portfolio-images-->
+          </div> <!--main-->
+        </div> <!--main-wrapper-->
+        <footer>
+            <div id="footer">
+              <div id="footer-left-column">
+                  <div id="contact-item">
+                    <h4> связаться:  </h4>
+                  </div> 
+  
+                  <div id="footer-pair-item">
+                      <div id="phone-post">
+                          <p>
+                              Тел. +7 (495) 000-00-00 <br>
+                              Email: info@mysite.ru
+                          </p>
+                        </div> <!--phone-post-->
+                        <div id="adress-item">
+                            <p>
+                              Ул. Арбат, 1а <br>
+                              Москва, Россия
+                            </p>
+                      </div> <!--adress-item-->
+                  </div> <!--footer-pair-item-->
+                  <div id="contacts-images">
+                    <a href="https://vk.com">
+                      <img src="images/contact-vk.png" alt="Vkontakte"> 
+                    </a>
+                    <a href="https://www.facebook.com">
+                      <img src="images/contact-facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://twitter.com">
+                      <img src="images/contact-twitter.png" alt="twitter">
+                    </a>
+                  </div> <!--contacts-images-->
+                </div> <!--footer-left-column-->
+  
+                <div id="footer-right-column">
+                    <div id="form-item">
+                        <h4> написать: </h4>
+                      </div> <!--form-item-->
+                      <div id="form">
+                        <p>
+                          there will be a form
+                        </p>
+                      </div> <!--form-->
+                </div> <!--footer-right-column-->
+                <div id="copyrights">
+                  <p>
+                    &copy; 2023 Архитектурная компания «Микеланджело». <br>
+                    Все права не сохранены. 
+                    </p> 
+                </div> <!--copyrights-->
+            </div> <!--footer-->
+          </footer> 
+  </div> <!--container-->
 </body>
-</html> 
+</html>

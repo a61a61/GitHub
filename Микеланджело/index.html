@@ -8,127 +8,212 @@
       <link rel="stylesheet" href="style.css" type="text/css">
     </head>
 <body>
-    <header>
-      <h1>
-        <a href="#">
-          <span id="logo">аk</span> микеланджело
-        </a>
-      </h1>
-      <nav>
-          <ul>
-            <li><a href="#">главная</a></li>
-            <li><a class="nav-link" href="portfolio.html">портфолио</a></li>
-            <li><a class="nav-link" href="#">о нас</a></li>
-            <li><a class="nav-link" href="#">новости</a></li>
-          </ul>
-      </nav>
-    </header>
-  <div id="main">
-      <h2> избранные проекты </h2>
-          <a href="#">
-            <img class="projects-img" src="images/project-1.png" alt="проект 1">
-          </a>
+    <div id="container">    
+        <header>
+          <div id="header">
+            <div id="company-name">
+                <h1>
+                  <a href="#">
+                    <span id="logo">аk</span>микеланджело
+                  </a>
+                </h1>
+            </div> <!--company-name-->
+            <div id="nav">
+              <div class="navitem">
+                <a href="#">главная</a>
+              </div>
+              <div class="navitem">
+                <a class="nav-link" href="portfolio.html">портфолио</a>
+              </div>
+              <div class="navitem">
+                <a class="nav-link" href="#">о&nbsp;нас</a>
+              </div>
+              <div class="navitem">
+                <a class="nav-link" href="#">новости</a>
+              </div>
+            </div> <!--nav-->
+          </div>
+        </header>
+      <div id="main-wrapper">
+          <div id="main">
+              <h2> избранные проекты </h2>
+                <div id="prj-all">
+                  <div class="flex-projects">
+                        <a href="project-1.html">
+                            <img class="projects-img" src="images/project-1.png" alt="проект 1">
+                        </a>
+                      <div class="prj-discription">
+                          <div class="date-of-projects">
+                            <time datetime="01-23"> 01/23 </time> 
+                          </div> <!--date-of-projects-->
+                          <div class="h3-alignment">
+                              <h3>
+                                  проект 1, <br>
+                                  петербург
+                              </h3>    
+                          </div> <!--h3-alignment-->
+                            <p>
+                              Это текст. Кликните дважды, чтобы отредактировать 
+                              и рассказать посетителям о себе. 
+                            </p>
+                            <div class="link-alignment">
+                              <a class="main-link" href="project-1.html">Cмотреть</a>
+                            </div>
+                      </div> <!--prj-discription-->
+                  </div> <!--flex-projects-->
+                  <div class="flex-projects">
+                          <a href="#">
+                            <img class="projects-img" src="images/project-2.png" alt="проект 2">
+                          </a>
+                          <div class="prj-discription">
+                              <div class="date-of-projects">
+                                  <time datetime="01-23"> 01/23 </time> 
+                              </div> <!--date-of-projects-->
+                              <div class="h3-alignment">
+                                <h3>
+                                    проект 2, <br>
+                                    москва
+                                </h3>
+                              </div> <!--h3-alignment-->
+                              <p>
+                                Это текст. Кликните дважды, чтобы отредактировать 
+                                и рассказать посетителям о себе.
+                              </p>
+                              <div class="link-alignment">
+                                <a class="main-link" href="#">Cмотреть</a>
+                              </div>                       
+                            </div> <!--prj-discription-->
+                  </div> <!--flex-projects-->
+                  <div class="flex-projects">
+                      <a href="#">
+                          <img class="projects-img" src="images/project-3.png" alt="проект 3">
+                        </a>
+                        <div class="prj-discription">
+                            <div class="date-of-projects">
+                                <time datetime="01-23"> 01/23 </time> 
+                            </div> <!--date-of-projects-->
+                            <div class="h3-alignment">
+                              <h3> 
+                                  проект 3, <br>
+                                  петербург
+                              </h3> 
+                            </div> <!--h3-alignment--> 
+                            <p>
+                              Это текст. Кликните дважды, чтобы отредактировать 
+                              и рассказать посетителям о себе.
+                            </p>
+                            <div class="link-alignment">
+                              <a class="main-link" href="#">Cмотреть</a>
+                            </div>                      
+                          </div> <!--prj-discription-->
+                </div> <!--flex-projects-->
+                </div> <!--prj-all-->
+                  <h2>
+                    свежие новости
+                  </h2>
+                  <div id="news-container">
+                      <div class="news">
+                          <h3 class="news-number"> 01 </h3>
+                          <div class="date-of-news">
+                            <time datetime="2023-06-16"> 08 &nbsp; / &nbsp; 23 &nbsp; / &nbsp; 2023</time>
+                          </div> <!--date-of-news-->
+                          <div class="projects-text">
+                            <p>
+                              Это текст. Кликните дважды, 
+                              чтобы отредактировать и рассказать посетителям о себе.
+                            </p>
+                          </div>
+                          <div class="link-alignment">
+                            <a class="main-link" href="#">Читать</a>
+                          </div>  <!--link-alignment-->
+                        </div> <!--news-->
+                        
+                        <div class="news">
+                            <h3 class="news-number"> 02 </h3>
+                            <div class="date-of-news">
+                              <time datetime="2023-06-16"> 08 &nbsp; / &nbsp; 23 &nbsp; / &nbsp; 2023</time>
+                            </div> <!--date-of-news-->
+                            <div class="projects-text">
+                              <p>
+                                Это текст. Кликните дважды, 
+                                чтобы отредактировать и рассказать посетителям о себе.
+                            </p>
+                            </div>
+                            <div class="link-alignment">
+                              <a class="main-link" href="#">Читать</a>
+                            </div> <!--link-alignment-->
+                        </div> <!--news-->
+                      
+                        <div class="news">
+                          <h3 class="news-number"> 03 </h3>
+                          <div class="date-of-news">
+                            <time datetime="2023-06-16"> 08 &nbsp; / &nbsp; 23 &nbsp; / &nbsp; 2023</time>
+                          </div> <!--date-of-news-->
+                          <div class="projects-text">
+                            <p>
+                              Это текст. Кликните дважды, 
+                              чтобы отредактировать и рассказать посетителям о себе.
+                          </p>
+                          </div>
+                          <div class="link-alignment">
+                            <a class="main-link" href="#">Читать</a>
+                          </div> <!--link-alignment-->
+                      </div> <!--news-->
+                  </div> <!--news-container-->
+            </div> <!--main-->
+      </div> <!--main-wrapper-->
+        <footer>
+          <div id="footer">
+            <div id="footer-left-column">
+                <div id="contact-item">
+                  <h4> связаться:  </h4>
+                </div> 
 
-      <div class="projects">
-            <time datetime="01-23"> 01/23 </time> 
-          <h3>
-              ПРОЕКТ 1, <br>
-              МОСКВА
-          </h3>
-          <p>
-            Это текст. Кликните дважды, чтобы отредактировать 
-            и рассказать посетителям о себе.
-          </p>
-          <a class="link-styled" href="#">Cмотреть</a>
-      </div>
+                <div id="footer-pair-item">
+                    <div id="phone-post">
+                        <p>
+                            Тел. +7 (495) 000-00-00 <br>
+                            Email: info@mysite.ru
+                        </p>
+                      </div> <!--phone-post-->
+                      <div id="adress-item">
+                          <p>
+                            Ул. Арбат, 1а <br>
+                            Москва, Россия
+                          </p>
+                    </div> <!--adress-item-->
+                </div> <!--footer-pair-item-->
+                <div id="contacts-images">
+                  <a href="https://vk.com">
+                    <img src="images/contact-vk.png" alt="Vkontakte"> 
+                  </a>
+                  <a href="https://www.facebook.com">
+                    <img src="images/contact-facebook.png" alt="facebook">
+                  </a>
+                  <a href="https://twitter.com">
+                    <img src="images/contact-twitter.png" alt="twitter">
+                  </a>
+                </div> <!--contacts-images-->
+              </div> <!--footer-left-column-->
 
-      <a href="#">
-        <img class="projects-img" src="images/project-2.png" alt="проект 1">
-      </a>
-      <div class="projects">
-            <time datetime="02-23"> 02/23 </time> 
-          <h3>
-              ПРОЕКТ 2, <br>
-              ПЕТЕРБУРГ
-          </h3>
-          <p>
-            Это текст. Кликните дважды, чтобы отредактировать 
-            и рассказать посетителям о себе.
-          </p>
-          <a class="link-styled" href="#">Cмотреть</a>
-      </div>
-
-      <a href="#">
-          <img class="projects-img" src="images/project-3.png" alt="проект 1">
-        </a>
-        <div class="projects projects-down">
-              <time datetime="02-23"> 03/23 </time> 
-            <h3>
-                ПРОЕКТ 3, <br>
-                МОСКВА
-            </h3>
-            <p>
-              Это текст. Кликните дважды, чтобы отредактировать 
-              и рассказать посетителям о себе.
-            </p>
-            <a class="link-styled" href="#">Cмотреть</a>
-        </div>
-  <h2 id="h2-padding-fix">
-    свежие новости
-  </h2>
-  <div class="news">
-    <h3 class="news-number"> 01 </h3>
-    <time datetime="2023-06-16"> 06 &nbsp; / &nbsp; 23 &nbsp; / &nbsp; 2023</time>
-    <p>
-        Это текст. Кликните дважды, 
-        чтобы отредактировать и рассказать посетителям о себе.
-    </p>
-    <a class="link-styled" href="#">Читать</a>
-  </div>
-  
-  <div class="news">
-      <h3 class="news-number"> 02 </h3>
-      <time datetime="2023-07-16"> 07 &nbsp; / &nbsp; 23 &nbsp; / &nbsp; 2023</time>
-      <p>
-          Это текст. Кликните дважды, 
-          чтобы отредактировать и рассказать посетителям о себе.
-      </p>
-      <a class="link-styled" href="#">Читать</a>
-  </div>
-  
-  <div class="news last">
-      <h3 class="news-number"> 03 </h3>
-      <time datetime="2023-06-16"> 08 &nbsp; / &nbsp; 23 &nbsp; / &nbsp; 2023</time>
-      <p>
-          Это текст. Кликните дважды, 
-          чтобы отредактировать и рассказать посетителям о себе.
-      </p>
-      <a class="link-styled" href="#">Читать</a>
-  </div> 
-  </div> <!--main-->
-
-  <footer>
-      <h4>
-      <span  id="contacts">
-        связаться:
-      </span> 
-      <span id="form">
-        написать: 
-      </span>
-      </h4> 
-
-      <p id="phone-post">
-          Тел. +7 (495) 000-00-00 
-          Email: info@mysite.ru
-      </p>
-      <p id="adress">
-          Ул. Арбат, 1а 
-          Москва, Россия
-      </p>
-      <p id="copyrights">
-          &copy; 2023 Архитектурная компания «Микеланджело». 
-          Все права не сохранены. 
-      </p> 
-  </footer>
+              <div id="footer-right-column">
+                  <div id="form-item">
+                      <h4> написать: </h4>
+                    </div> <!--form-item-->
+                    <div id="form">
+                      <p>
+                        there will be a form
+                      </p>
+                    </div> <!--form-->
+              </div> <!--footer-right-column-->
+              <div id="copyrights">
+                <p>
+                  &copy; 2023 Архитектурная компания «Микеланджело». <br>
+                  Все права не сохранены. 
+                  </p> 
+              </div> <!--copyrights-->
+          </div> <!--footer-->
+        </footer> 
+    </div> <!--container-->
 </body>
 </html>

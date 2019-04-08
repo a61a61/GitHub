@@ -1,10 +1,9 @@
-/* * {
-  box-sizing: border-box;
-}  */
+* {
+  margin: 0;
+  padding: 0;
+}  
 
 body {
-  margin: 0px;
-  padding: 0px;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 100%;
   font-weight: normal;
@@ -12,16 +11,72 @@ body {
   letter-spacing: 3px;
 }
 
-
-header, #portfolio {
-  padding: 50px 265px 580px 265px;
-  background: url(images/headimg.jpg) no-repeat center top / cover; 
-  color: rgb(149 123 95);
-  text-transform: uppercase;
+#container {
+  display: flex;
+  flex-direction: column; 
 }
 
-h1 {
+#header, #footer, #main {
+  max-width: 850px; 
+  margin: 0 auto;
+} 
+
+#footer, #main {
+  padding-left: 2%;
+}
+
+#main {
+  padding-bottom: 11%;
+}
+
+#company-name h1 {
   font-size: 140%;
+}
+
+#main-wrapper {
+  background-color: #2B2B2B;
+}
+
+header {
+  background: url(images/headimg.jpg) no-repeat center top / cover; 
+  height: 700px;
+  padding-left: 2%;
+}
+
+#header {
+  display: flex;
+  color: rgb(149 123 95);
+  text-transform: uppercase;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 4%;
+}
+
+#company-name {
+  display: flex;
+  padding-right: 35px; 
+  flex-basis: 40%;
+}
+
+#nav {
+  padding-top: 6px;
+  display: flex;
+  flex-basis: 60%;
+  justify-content: space-around;
+}
+
+.navitem {
+  display: flex;
+  justify-content: center;
+  font-size: 90%; 
+  font-weight: bold;
+  letter-spacing: 0; 
+  list-style-type: none;
+  padding-right: 15px;
+}
+
+a.nav-link {
+  color: #808080;
 }
 
 #logo {
@@ -31,149 +86,338 @@ h1 {
   margin-right: 30px;
 }
 
-nav {
-  position: relative;
-  top: -63px;
-  left: 345px;
-  width: 600px;
-}
-
-nav ul li {
-  display: inline-block;
-  font-size: 90%; 
-  padding: 25px;
-  font-weight: bold;
-  letter-spacing: 0;
-}
-
-
 a {
   color: rgb(149 123 95);
   text-decoration: none;
 }
 
-a.nav-link {
-  color: #808080;
-}
-
-#main, #portfolio {
-  padding: 110px 265px 140px 265px; 
-  background-color: #2B2B2B;
-  margin: 0;
-}
-
-h2 {
+#main h2 {
   text-transform: uppercase;
-  font-weight: lighter;
-  padding-bottom: 40px;
+  font-weight: lighter; 
+  flex-direction: row; 
+  margin-top: 13%;
+  margin-bottom: 7%;
 }
 
-#h2-padding-fix {
-  padding-bottom: 10px;
+.flex-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10%;
+} 
+
+.flex-projects:last-child {
+  margin-bottom: 0;
 }
 
-.projects {
-  margin-bottom: 150px;
-  margin-left: 610px;
-  padding-top: 35px; 
+img {
+  width: 97.5%;
 }
 
-.projects-down {
-  padding-bottom: 40px;
+#contacts-images img {
+  width: initial;
 }
 
-.projects-img {
-  float: left;
+.prj-discription {
+  flex-basis: 245px;
+  margin-top: 6%;
+  margin-left: 2%;
 }
-
+   
 h3 {
   text-transform: uppercase;
   color: #957B5F;
   font-size: 170%;
   font-weight: 900;
   line-height: 130%;
-  margin-top: 20px;
+}
+
+.h3-alignment {
   margin-bottom: 20px;
 }
 
-p, a.link-styled {
+.date-of-projects {
+  margin-bottom: 8%;
+}
+
+.date-of-news {
+  margin-bottom: 25px;
+}
+
+time {
+  font-size: 15px;
+}
+
+p, a.main-link{
   font-size: 96%;
   line-height: 145%;
   color: #D3D3D3;
-  letter-spacing: 0;
-  margin-bottom: 45px;
+  letter-spacing: 0; 
 }
 
-.news a, .link-styled {
-  padding-left: 7px;
+ 
+.link-alignment {
+  margin-left: 7px;
+  margin-top: 50px;
+}
+
+#news-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .news {
-  display: inline-block;
-  width: 296px;
+  flex-direction: column;
+  margin-right: 15px;
 }
 
-div.last {
-  width: 270px;
+.news:last-child {
+  margin: 0;
 }
 
 .news-number {
   font-size: 800%;
   letter-spacing: 8px;
+  width: 100%;
+}
+
+.news p { 
+  line-height: 180%;
+  width: 210px;
+}
+#news-container time {
+  margin-bottom: 35px;
 }
 
 a:hover  {
   color: rgb(149 123 95);
 }
 
-.news p { /*тут я вспомнил, что можно прописывать путь к селектору*/
-  line-height: 180%;
-  margin-top: 30px;
-  width: 210px
-}
-
 footer {
-  padding: 0px 265px 30px 265px ;
   background-color: black; 
   color: #686868;
 }
 
-footer h4 {
-  margin: 0;
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#footer h4 {
   text-transform: uppercase;
   font-weight: lighter;
   font-size: 90%;
 }
 
-footer p {
+#footer p {
   color: #686868;
 }
 
-#contacts, #form, #phone-post, #adress, #copyrights {
-  position: relative; 
+#footer-left-column, #footer-right-column {
+  flex-basis: 50%;
 }
 
-#contacts, #form {
-  top: 60px;
+#form-item, #contact-item {
+  margin-top: 16%;
+  margin-bottom: 12%;
 }
 
-#form {
-  left: 360px;
-}
-
-#phone-post, #adress {
-  width: 192px;
-}
-
-#phone-post {
-  top: 90px;
+#footer-pair-item {
+  display: flex;
+  flex-basis: 50%;
+  flex-wrap: wrap;
 } 
 
-#adress {
-  left: 210px;
+#footer-left-column {
+  min-width: 190px;
+} 
+
+#contacts-images img {
+  margin-right: 15px;
+}
+
+#phone-post, #adress-item, #form {
+  min-width: 50%;
+  margin-bottom: 20px;
 }
 
 #copyrights {
-  top: 10px;
-  width: 390px;
+  margin-bottom: 8%;
+  margin-top: 6%;
+}
+
+  /* --------------- portfolio-page --------------- */
+
+#portfolio-images img {
+  margin-bottom: 4%; 
+} 
+
+  /* --------------- project-page --------------- */
+
+#project-page img {
+  margin-top: 13%;
+  margin-bottom: 3%;
+}
+
+#project-wrapper {
+  display: flex;
+  margin-top: 2%;
+}
+
+#project-page #wrapepr-for-main-info {
+  flex-grow: 0;
+  margin-right: 20%;
+}
+
+#project-page #project-discription {
+  max-width: 461px;
+  margin-right: 2%;
+}
+
+#name-of-project {
+  padding-bottom: 10%;
+}
+
+#project-datetime {
+  margin-bottom: 42%;
+}
+
+#project-page #city {
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 0.25em;
+  margin-bottom: 10%;
+}
+
+#backbutton-project {
+  margin-bottom: 20%; 
+}
+
+#project-page #main-info {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+@media screen and (max-width: 740px) {
+
+  #header {
+    flex-direction: column;
+  }
+
+  #company-name {
+    padding: 0;
+    margin-bottom: 70px;
+    justify-content: center;
+  }
+
+  #nav {
+    flex-basis: 70%;
+    justify-content: space-evenly;
+  }
+
+  .navitem {
+    padding: 0;
+  }
+
+    /* --------------- project-page --------------- */
+
+  #project-wrapper {
+  flex-wrap: wrap;
+  }
+
+  #project-datetime {
+    margin-bottom: 20%;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  
+  header {
+    height: 600px;
+  }
+
+  #news-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+  } 
+
+  .news p {
+    max-width: 80%;
+    min-width: 220px;
+  }
+
+  .news-number{
+    font-size: 580%;
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+
+  header {
+    height: 480px;
+  }
+
+  #company-name h1  {
+    font-size: 109%;
+  } 
+
+  #nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #nav .navitem {
+    margin-bottom: 45px;
+  }
+
+  #main h2 {
+    font-size: 110%;
+  }
+
+  time {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 152%;
+  }
+
+  .news {
+    margin: 12px 0;
+  }
+
+  .news-number {
+    font-size: 330%;
+  }
+
+  .link-alignment {
+    margin-top: 15px;
+  }
+  
+  .date-of-news {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  #phone-post {
+    margin-bottom: 10px;
+  }
+
+    /* --------------- project-page --------------- */
+  
+  #project-page #city {
+    font-size: 14px;
+    margin-bottom: 5%;
+  }
+
+  #backbutton-project {
+    margin-bottom: 16%;
+  }
+
+  #project-datetime {
+    margin-bottom: 12%;
+  }
 }
